@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
 
-  final int days = 25;
+  int days = 27;
   final String name = "Khan";
 
   @override
@@ -11,13 +11,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Catelog App"),
       ),
-      drawer: Drawer(),
-
       body: Center(
         child: Container(
           child: Text("Welcome to $days days of Flutter"),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
